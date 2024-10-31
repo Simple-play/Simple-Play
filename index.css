@@ -1,0 +1,128 @@
+<style type="text/css">
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px 20px 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    position: relative; /* Set relative position for dropdown alignment */
+}
+
+/* Menu Button */
+
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #444;
+    color: #e0e0e0;
+    font-size: 1.1em;
+    outline:0;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #e0e0e0;
+    font-size: 1.1em;
+}
+
+
+
+
+/* Game Categories */
+.game-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 120px 20px 20px;
+}
+
+.game-tile {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.game-tile img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.game-tile img:hover {
+    transform: scale(1.05);
+}
+
+.game-tile h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .top-bar {
+        justify-content: center;
+    }
+    .search-bar {
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .game-categories {
+        justify-content: space-around;
+    }
+    .game-tile {
+        width: 22%;
+    }
+}
+
+
+</style>
